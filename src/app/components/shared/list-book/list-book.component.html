@@ -1,0 +1,33 @@
+<div class="table table-responsive">
+  <table class="table mt-5 table-bordered">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Isbn</th>
+        <th>Date De Parution</th>
+        <th>Maison Edition</th>
+        <th>Nombre De Page</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let book of books">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.description}}</td>
+        <td>{{book.isbn}}</td>
+        <td>{{book.dateDeParution | date }}</td>
+        <td>{{book.maisonEdition}}</td>
+        <td>{{book.nombreDePage}}</td>
+        <td>
+          <button class="btn btn-outline-danger"> supprimer</button>
+          <button class="btn btn-outline-primary"> modifier</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
