@@ -17,6 +17,11 @@ const routes: Routes = [
     component : LoginComponent
   },
   {
+    path: 'admin',
+    loadChildren : ()=> import('./modules/admin.layout.module').then(m => m.AdminLayoutModule),
+    canActivate : [IsConnectedGuard]
+  },
+  {
     path: 'register',
     component : RegisterComponent
   },

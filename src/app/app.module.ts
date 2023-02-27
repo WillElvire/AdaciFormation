@@ -12,6 +12,7 @@ import { ListBookComponent } from './components/shared/list-book/list-book.compo
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     NotFoundComponent,
     LoginComponent,
     ListBookComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminLayoutComponent,
   ],
   imports: [
     BrowserModule,

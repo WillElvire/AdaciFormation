@@ -10,7 +10,6 @@ export class IsConnectedGuard implements CanActivate {
 
   isConnected : boolean = false;
   constructor(private router :Router , private userService : UserService){
-
   }
   canActivate(
     route: ActivatedRouteSnapshot,
